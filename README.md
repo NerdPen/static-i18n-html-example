@@ -1,6 +1,7 @@
 # Webpack 5 i18n HTML 靜態輸出範例
 
-> 使用 [Webpack 5+](https://webpack.js.org/) 製作程式打包，[static-i18n](https://github.com/claudetech/node-static-i18n) 做多語系設定。
+> -   使用 [Webpack 5+](https://webpack.js.org/) 製作程式打包
+> -   [static-i18n](https://github.com/claudetech/node-static-i18n) 做多語系設定。
 
 ---
 
