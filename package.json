@@ -5,9 +5,9 @@
     "author": "NerdPen <penhao.developer@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "i18n": "rimraf i18n && static-i18n -l en -i en -i zh www --localesPath www/locales/ --output-dir i18n",
-        "dev": "webpack serve --config webpack.config.js --progress",
-        "build": "set NODE_ENV=production &&  npm run i18n && webpack --config webpack.prod.js"
+        "dev": "webpack serve --config webpack.config.js --progress --mode development",
+        "build": "npm run i18n-build && webpack --config webpack.config.js --mode production",
+        "i18n-build": "rimraf i18n && static-i18n -l en -i en -i zh www --localesPath www/locales/ --output-dir i18n"
     },
     "devDependencies": {
         "@babel/core": "^7.14.0",

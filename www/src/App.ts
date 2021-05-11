@@ -22,11 +22,11 @@ const setBaseHref = () => {
 //
 let currentPage: Page;
 const initPage = () => {
-    const pageName = window.location.pathname
-        .split("/")
-        .pop()
-        .replace(".html", "");
-    switch (pageName) {
+    const pageName =
+        window.location.pathname === "/"
+            ? "index"
+            : window.location.pathname.split("/").pop().replace(".html", "");
+    switch (pageName.toLowerCase()) {
         case "index":
             currentPage = new IndexPage(pageName);
         case "about":
