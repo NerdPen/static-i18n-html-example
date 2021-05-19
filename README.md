@@ -7,19 +7,19 @@
 
 ## 啟動專案，請執行以下步驟：
 
-##### 1. Clone repository & 安裝 package：
+#### 1. Clone repository & 安裝 package：
 
 ```bash
 yarn install
 ```
 
-##### 2. 安裝完畢後，啟動 Development server [http://localhost:8080](http://localhost:8080)：
+#### 2. 安裝完畢後，啟動 Development server [http://localhost:8080](http://localhost:8080)：
 
 ```bash
 npm run dev
 ```
 
-##### 3. 發佈專案：
+#### 3. 發佈專案：
 
 ```bash
 npm run build
@@ -29,21 +29,21 @@ npm run build
 
 ```
 dist/ (打包後生成)
+└───assets/
+│   └───js/css/images/...etc
+│
+└───en/zh/...etc
+│   └───index.html
+│   └───others.html
 │   index.html
 │   others.html
-└───assets/
-│   └───/js
-│   └───/css
-│   └───/images
 │
 i18n/ (打包後生成)
 │
-www/ (主程式內容)
+www/ (主程式內容，開發任何檔案請製作於此)
+│
 └───assets/
 │   └───images/
-│   └───others/
-│       ...
-│       ...
 │
 └───styles/
 │   └───/**/*.scss
@@ -52,7 +52,7 @@ www/ (主程式內容)
 │   └───/**/*.ts
 │   └───/**/*.js
 │
-└───locales/ (多語系文檔)
+└───locales/ (多語系文檔，請於此新增語系檔案)
 │   └───en.json
 │   └───zh.json
 │
